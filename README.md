@@ -1,4 +1,3 @@
-
 # ![LitReviews](docs/img/LitReviewsBlack@0.5x.png)
 
 # Overview
@@ -21,24 +20,24 @@ Please see [works referenced](#Works-Referenced) for information about the origi
 
 ### Objective: 
 
-0. Find out what ideas are popular within traumatic brain injury based on the papers the field references. 
-0. Generate a systematic method for exploring these ideas.
+1. Find out what ideas are popular within traumatic brain injury based on the papers the field references. 
+1. Generate a systematic method for exploring these ideas.
 
 ### Method:
 
-0. Search Pubmed for "traumatic brain injury". Yields about ~38,000 records.
-0. For all ~38k articles, list their references.
-0. Keep track of references that occur in multiple articles.
-0. Use graph theory metrics to visualize and calculate metrics for the citation network.
+1. Search Pubmed for "traumatic brain injury". Yields about ~38,000 records.
+1. For all ~38k articles, list their references.
+1. Keep track of references that occur in multiple articles.
+1. Use graph theory metrics to visualize and calculate metrics for the citation network.
     * Positions are determined by spring-electric modelling. Learn more about how the following network graph was made at [cytoscape](http://www.cytoscape.org/) and [allegroviva](http://allegroviva.com/allegrolayout2/force-directed-layouts/) (video).
     * In short, nodes that are linked together (via citation) are drawn closer together. Otherwise, nodes repel one another.   
 
 ### Results:
 
-0. Shown above is ~15,000 articles (circles/nodes).
+1. Shown above is ~15,000 articles (circles/nodes).
     * Limited by NCBI FLink output. 
-0. Although links are not shown, the network below is completely connected (i.e. if you place your finger on one node, it is possible to trace a path to another node).
-0. Size = Citation count
+1. Although links are not shown, the network below is completely connected (i.e. if you place your finger on one node, it is possible to trace a path to another node).
+1. Size = Citation count
     * e.g., The largest node was cited by 395 TBI articles from the original search term.
         
 
@@ -77,7 +76,13 @@ Reading the 3 papers towards the bottom of the picture may be a good way of cove
 
 # Look for one of many undecided upon logos.
 
-![](docs/img/LitRColor@0.5x.png) ![](docs/img/LitRBlack@0.5x.png) ![](docs/img/LitReviewsColor@0.5x.png) ![](docs/img/LitReviewsBlack@0.5x.png)
+![](docs/img/LitRColor@0.5x.png)    
+
+![](docs/img/LitReviewsColor@0.5x.png) 
+
+![](docs/img/LitRBlack@0.5x.png)    
+
+![](docs/img/LitReviewsBlack@0.5x.png)
 
 
 
