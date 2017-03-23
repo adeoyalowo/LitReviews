@@ -6,11 +6,11 @@
 
 ## Projects
 
-1. [**PubCrawl**](#PubCrawl) - Uses NCBI E-Utilites via BioPython package to search PubMed and pull metadata. Written in Python 3 and visualized in Cytoscape.
-2. [**PubCrawlR**](#PubCrawlR) - Future development. Will likely be an extension to PubCrawl which uses R for statistical analyses on metadata.
-3. [**CrossCheck**](#CrossCheck) - Future development. Citation metadata and funding analyzer using NIH RePORTER (or CrossRef as suggested by Ben Wilks).
+1. [**PubCrawl**](#pubcrawl) - Uses NCBI E-Utilites via BioPython package to search PubMed and pull metadata. Written in Python 3 and visualized in Cytoscape.
+2. [**PubCrawlR**](#pubcrawlr) - Future development. Will likely be an extension to PubCrawl which uses R for statistical analyses on metadata.
+3. [**CrossCheck**](#crosscheck) - Future development. Citation metadata and funding analyzer using NIH RePORTER (or CrossRef as suggested by Ben Wilks).
 
-Please see [works referenced](#Works-Referenced) for information about the original works on which LitR builds upon.
+Please see [works referenced](#works-referenced) for information about the original works on which LitR builds upon.
 
 # Example
 
@@ -99,7 +99,7 @@ Reading the 3 papers towards the bottom of the picture may be a good way of cove
 ![](docs/img/CrossCheck-02@0.5x.png)
 
 # Works Referenced
-[Back to top](#Overview)
+[Back to top](#overview)
 
 * [BioPython](https://github.com/biopython/biopython)
     * Cock, P.J.A. et al. Biopython: freely available Python tools for computational molecular biology and bioinformatics. Bioinformatics 2009 Jun 1; 25(11) 1422-3 http://dx.doi.org/10.1093/bioinformatics/btp163 pmid:19304878
