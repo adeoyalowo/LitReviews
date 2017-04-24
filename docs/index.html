@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>README</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); overflow: auto; background-color: rgb(40, 44, 52); }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(75, 83, 98); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { border-top: 1px solid rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .find-result .region.region.region,
+pre.editor-colors .current-result .region.region.region {
+  border-radius: 2px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+pre.editor-colors .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+pre.editor-colors .current-result .region.region.region {
+  border: 2px solid #528bff;
+  transition-duration: .1s;
+}
+pre.editor-colors .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #2c313a;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #abb2bf;
+}
+.syntax--comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #5c6370;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #98c379;
+}
+.syntax--keyword {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--control {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--operator {
+  color: #abb2bf;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #61afef;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #d19a66;
+}
+.syntax--storage {
+  color: #c678dd;
+}
+.syntax--storage.syntax--type.syntax--annotation,
+.syntax--storage.syntax--type.syntax--primitive {
+  color: #c678dd;
+}
+.syntax--storage.syntax--modifier.syntax--package,
+.syntax--storage.syntax--modifier.syntax--import {
+  color: #abb2bf;
+}
+.syntax--constant {
+  color: #d19a66;
+}
+.syntax--constant.syntax--variable {
+  color: #d19a66;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--numeric {
+  color: #d19a66;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #56b6c2;
+}
+.syntax--variable {
+  color: #e06c75;
+}
+.syntax--variable.syntax--interpolation {
+  color: #be5046;
+}
+.syntax--variable.syntax--parameter {
+  color: #abb2bf;
+}
+.syntax--string {
+  color: #98c379;
+}
+.syntax--string.syntax--regexp {
+  color: #56b6c2;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #e5c07b;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #e06c75;
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #5c6370;
+}
+.syntax--punctuation.syntax--definition.syntax--method-parameters,
+.syntax--punctuation.syntax--definition.syntax--function-parameters,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--separator,
+.syntax--punctuation.syntax--definition.syntax--seperator,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #abb2bf;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #61afef;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #be5046;
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: #abb2bf;
+}
+.syntax--support.syntax--class {
+  color: #e5c07b;
+}
+.syntax--support.syntax--type {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #e06c75;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #d19a66;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #61afef;
+}
+.syntax--meta.syntax--class {
+  color: #e5c07b;
+}
+.syntax--meta.syntax--class.syntax--body {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--definition.syntax--variable {
+  color: #e06c75;
+}
+.syntax--meta.syntax--link {
+  color: #d19a66;
+}
+.syntax--meta.syntax--require {
+  color: #61afef;
+}
+.syntax--meta.syntax--selector {
+  color: #c678dd;
+}
+.syntax--meta.syntax--separator {
+  background-color: #373b41;
+  color: #abb2bf;
+}
+.syntax--meta.syntax--tag {
+  color: #abb2bf;
+}
+.syntax--underline {
+  text-decoration: underline;
+}
+.syntax--none {
+  color: #abb2bf;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.syntax--invalid.syntax--illegal {
+  color: #ffffff !important;
+  background-color: #e05252 !important;
+}
+.syntax--markup.syntax--bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #c678dd;
+}
+.syntax--markup.syntax--deleted {
+  color: #e06c75;
+}
+.syntax--markup.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #e06c75;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #61afef;
+}
+.syntax--markup.syntax--link {
+  color: #56b6c2;
+}
+.syntax--markup.syntax--inserted {
+  color: #98c379;
+}
+.syntax--markup.syntax--quote {
+  color: #d19a66;
+}
+.syntax--markup.syntax--raw {
+  color: #98c379;
+}
+.syntax--source.syntax--c .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cpp .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--css .syntax--property-name,
+.syntax--source.syntax--css .syntax--property-value {
+  color: #828997;
+}
+.syntax--source.syntax--css .syntax--property-name.syntax--support,
+.syntax--source.syntax--css .syntax--property-value.syntax--support {
+  color: #abb2bf;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: #61afef;
+}
+.syntax--source.syntax--go .syntax--storage.syntax--type.syntax--string {
+  color: #c678dd;
+}
+.syntax--source.syntax--ini .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
+  color: #e06c75;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--keyword.syntax--operator.syntax--instanceof {
+  color: #c678dd;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
+  color: #e06c75;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair > .syntax--punctuation {
+  color: #abb2bf;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--delete,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--in,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--of,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--instanceof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--new,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--typeof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--void {
+  color: #c678dd;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: #98c379;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: #56b6c2;
+}
+.syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
+  color: inherit;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+  color: #c678dd;
+}
+.syntax--source.syntax--python .syntax--variable.syntax--parameter {
+  color: #d19a66;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h1 id="-litreviews-img-litreviewsblack-0-5x-png-"><img src="/Users/acoyalowo/Projects/LitReviews/docs/img/LitReviewsBlack@0.5x.png" alt="LitReviews"></h1>
+<h1 id="overview">Overview</h1>
+<p><strong>LitReviews</strong>, or LitR <em>(pronounced lighter)</em>, is a collection of pre-existing tools and custom written scripts to create an <strong>automated</strong> and <strong>systematic</strong> method of conducting <strong>literature reviews in science</strong>. By using <strong>existing APIs</strong> (application programming interfaces), <strong>graph theory</strong>, and <strong>GPU accelerated processing/visualizations</strong>, LitR will hopefully give the user a sense of what ideas, topics, methods, and funding are currently &quot;hot&quot; within a given field of interest.</p>
+<h2 id="projects">Projects</h2>
+<ol>
+<li><a href="#pubcrawl"><strong>PubCrawl</strong></a> - Uses NCBI E-Utilites via BioPython package to search PubMed and pull metadata. Written in Python 3 and visualized in Cytoscape.</li>
+<li><a href="#pubcrawlr"><strong>PubCrawlR</strong></a> - Future development. Will likely be an extension to PubCrawl which uses R for statistical analyses on metadata.</li>
+<li><a href="#crosscheck"><strong>CrossCheck</strong></a> - Future development. Citation metadata and funding analyzer using NIH RePORTER (or CrossRef as suggested by Ben Wilks).</li>
+</ol>
+<p>Please see <a href="#works-referenced">works referenced</a> for information about the original works on which LitR builds upon.</p>
+<h1 id="example">Example</h1>
+<h2 id="traumatic-brain-injury-citation-map">Traumatic Brain Injury Citation Map</h2>
+<p><img src="/Users/acoyalowo/Projects/LitReviews/docs/img/citationgraph.png" alt=""></p>
+<h3 id="objective-">Objective:</h3>
+<ol>
+<li>Find out what ideas are popular within traumatic brain injury based on the papers the field references.</li>
+<li>Generate a systematic method for exploring these ideas.</li>
+</ol>
+<h3 id="method-">Method:</h3>
+<ol>
+<li>Search Pubmed for &quot;traumatic brain injury&quot;. Yields about ~38,000 records.</li>
+<li>For all ~38k articles, list their references.</li>
+<li>Keep track of references that show up in multiple articles.</li>
+<li>Use graph theory metrics to visualize and calculate metrics for the citation network.<ul>
+<li>Positions are determined by spring-electric modelling. Learn more about how the following network graph was made at <a href="http://www.cytoscape.org/">cytoscape</a> and <a href="http://allegroviva.com/allegrolayout2/force-directed-layouts/">allegroviva</a> (video).</li>
+<li>In short, nodes that are linked together (via citation) are drawn closer together. Otherwise, nodes repel one another.   </li>
+</ul>
+</li>
+</ol>
+<h3 id="results-">Results:</h3>
+<ol>
+<li>Shown above is ~15,000 articles (circles/nodes).<ul>
+<li>Limited by NCBI FLink output.</li>
+</ul>
+</li>
+<li>Although links are not shown, the network below is completely connected (i.e. if you place your finger on one node, it is possible to trace a path to another node).</li>
+<li>Size = Citation count<ul>
+<li>e.g., The largest node was cited by 395 (out of ~38,000) TBI articles from the original search term.</li>
+</ul>
+</li>
+</ol>
+<h2 id="using-graph-theory-to-determine-potentially-interesting-articles-">Using graph theory to determine potentially interesting articles.</h2>
+<ul>
+<li>Red = Stress.<ul>
+<li>&quot;Stress is calculated by measuring the number of shortest paths passing through a node.&quot;</li>
+<li>&quot;The stress of a node in a [network]...can indicate the relevance of [that node] as functionally capable of holding together communicating nodes.&quot; Definition slightly reworded by me. Please read original paper linked below.</li>
+<li>Source: <a href="http://www.cbmc.it/~scardonig/centiscape/CentiScaPefiles/CentralitiesTutorial.pdf">http://www.cbmc.it/~scardonig/centiscape/CentiScaPefiles/CentralitiesTutorial.pdf</a> (Research team cited below)</li>
+</ul>
+</li>
+</ul>
+<p><img src="/Users/acoyalowo/Projects/LitReviews/docs/img/top12stress.png" alt=""></p>
+<h3 id="top-12-stressed-articles-for-traumatic-brain-injury-as-of-fall-2016-">Top 12 Stressed Articles for Traumatic Brain Injury (As of Fall 2016)</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>PMID</th>
+<th>Title</th>
+<th>Authors</th>
+<th>Journal</th>
+<th>Year</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>23329160</td>
+<td>Animal models of traumatic brain injury.</td>
+<td>Xiong Y, Mahmood A, Chopp M.</td>
+<td>Nat Rev Neurosci.</td>
+<td>2013</td>
+</tr>
+<tr>
+<td>2</td>
+<td>19809467</td>
+<td>Traumatic brain injury: an overview of pathobiology with emphasis on military populations.</td>
+<td>Cernak I, Noble-Haeusslein LJ.</td>
+<td>J Cereb Blood Flow Metab.</td>
+<td>2010</td>
+</tr>
+<tr>
+<td>3</td>
+<td>21175576</td>
+<td>Animal modelling of traumatic brain injury in preclinical drug development: where do we go from here?</td>
+<td>Marklund N, Hillered L.</td>
+<td>Br J Pharmacol.</td>
+<td>2011</td>
+</tr>
+<tr>
+<td>4</td>
+<td>22285252</td>
+<td>Axonal pathology in traumatic brain injury.</td>
+<td>Johnson VE, Stewart W, Smith DH.</td>
+<td>Exp Neurol.</td>
+<td>2013</td>
+</tr>
+<tr>
+<td>5</td>
+<td>22438191</td>
+<td>A review of magnetic resonance imaging and diffusion tensor imaging findings in mild traumatic brain injury.</td>
+<td>Shenton ME, Hamoda HM, Schneiderman JS, Bouix S, Pasternak O, Rathi Y, Vu MA, Purohit MP, Helmer K, Koerte I, Lin AP, Westin CF, Kikinis R, Kubicki M, Stern RA, Zafonte R.</td>
+<td>Brain Imaging Behav.</td>
+<td>2012</td>
+</tr>
+<tr>
+<td>6</td>
+<td>21787167</td>
+<td>Emerging imaging tools for use with traumatic brain injury research.</td>
+<td>Hunter JV, Wilde EA, Tong KA, Holshouser BA.</td>
+<td>J Neurotrauma.</td>
+<td>2012</td>
+</tr>
+<tr>
+<td>7</td>
+<td>19249984</td>
+<td>Emerging treatments for traumatic brain injury.</td>
+<td>Xiong Y, Mahmood A, Chopp M.</td>
+<td>Expert Opin Emerg Drugs.</td>
+<td>2009</td>
+</tr>
+<tr>
+<td>8</td>
+<td>22593173</td>
+<td>Chronic traumatic encephalopathy in blast-exposed military veterans and a blast neurotrauma mouse model.</td>
+<td>Goldstein LE, Fisher AM, Tagge CA, Zhang XL, Velisek L, Sullivan JA, Upreti C, Kracht JM, Ericsson M, Wojnarowicz MW, Goletiani CJ, Maglakelidze GM, Casey N, Moncaster JA, Minaeva O, Moir RD, Nowinski CJ, Stern RA, Cantu RC, Geiling J, Blusztajn JK, Wolozin BL, Ikezu T, Stein TD, Budson AE, Kowall NW, Chargin D, Sharon A, Saman S, Hall GF, Moss WC, Cleveland RO, Tanzi RE, Stanton PK, McKee AC.</td>
+<td>Sci Transl Med.</td>
+<td>2012</td>
+</tr>
+<tr>
+<td>9</td>
+<td>23847533</td>
+<td>Molecular mechanisms of cognitive dysfunction following traumatic brain injury.</td>
+<td>Walker KR, Tesco G.</td>
+<td>Front Aging Neurosci.</td>
+<td>2013</td>
+</tr>
+<tr>
+<td>10</td>
+<td>21035878</td>
+<td>Neuroprotection for traumatic brain injury: translational challenges and emerging therapeutic strategies.</td>
+<td>Loane DJ, Faden AI.</td>
+<td>Trends Pharmacol Sci.</td>
+<td>2010</td>
+</tr>
+<tr>
+<td>11</td>
+<td>23458973</td>
+<td>Chronic neuropathologies of single and repetitive TBI: substrates of dementia?</td>
+<td>Smith DH, Johnson VE, Stewart W.</td>
+<td>Nat Rev Neurol.</td>
+<td>2013</td>
+</tr>
+<tr>
+<td>12</td>
+<td>19580914</td>
+<td>Persistent cognitive dysfunction after traumatic brain injury: A dopamine hypothesis.</td>
+<td>Bales JW, Wagner AK, Kline AE, Dixon CE.</td>
+<td>Neurosci Biobehav Rev.</td>
+<td>2009</td>
+</tr>
+</tbody>
+</table>
+<h3 id="for-comparison-here-are-the-top-cited-articles-when-searching-traumatic-brain-injury-march-2017-">For comparison, here are the top cited articles when searching traumatic brain injury (March 2017)</h3>
+<p>While the table above represents what TBI references appear most frequently in papers pubslished within the field of TBI, the following table represents what TBI references appear most frequently in papers published in any field.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>PmcRefCount</th>
+<th>Title</th>
+<th>Authors</th>
+<th>PubDate</th>
+<th>PubTypeList</th>
+<th>Journal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>827</td>
+<td>Glutamate uptake.</td>
+<td>Danbolt NC</td>
+<td>2001 Sep</td>
+<td>Journal Article, Review</td>
+<td>Prog Neurobiol</td>
+</tr>
+<tr>
+<td>2</td>
+<td>642</td>
+<td>ATP mediates rapid microglial response to local brain injury in vivo.</td>
+<td>Davalos D, Grutzendler J, Yang G, Kim JV, Zuo Y, Jung S, Littman DR, Dustin ML, Gan WB</td>
+<td>2005 Jun</td>
+<td>Journal Article</td>
+<td>Nat Neurosci</td>
+</tr>
+<tr>
+<td>3</td>
+<td>392</td>
+<td>Identification of two distinct macrophage subsets with divergent effects causing either neurotoxicity or regeneration in the injured mouse spinal cord.</td>
+<td>Kigerl KA, Gensel JC, Ankeny DP, Alexander JK, Donnelly DJ, Popovich PG</td>
+<td>2009 Oct 28</td>
+<td>Journal Article</td>
+<td>J Neurosci</td>
+</tr>
+<tr>
+<td>4</td>
+<td>375</td>
+<td>The epidemiology and impact of traumatic brain injury: a brief overview.</td>
+<td>Langlois JA, Rutland-Brown W, Wald MM</td>
+<td>2006 Sep-Oct</td>
+<td>Journal Article</td>
+<td>J Head Trauma Rehabil</td>
+</tr>
+<tr>
+<td>5</td>
+<td>340</td>
+<td>Mild traumatic brain injury in U.S. Soldiers returning from Iraq.</td>
+<td>Hoge CW, McGurk D, Thomas JL, Cox AL, Engel CC, Castro CA</td>
+<td>2008 Jan 31</td>
+<td>Journal Article</td>
+<td>N Engl J Med</td>
+</tr>
+<tr>
+<td>6</td>
+<td>315</td>
+<td>Chronic traumatic encephalopathy in athletes: progressive tauopathy after repetitive head injury.</td>
+<td>McKee AC, Cantu RC, Nowinski CJ, Hedley-Whyte ET, Gavett BE, Budson AE, Santini VE, Lee HS, Kubilus CA, Stern RA</td>
+<td>2009 Jul</td>
+<td>Journal Article, Review</td>
+<td>J Neuropathol Exp Neurol</td>
+</tr>
+<tr>
+<td>7</td>
+<td>260</td>
+<td>The therapeutic potential of poly(ADP-ribose) polymerase inhibitors.</td>
+<td>Virág L, Szabó C</td>
+<td>2002 Sep</td>
+<td>Journal Article, Review</td>
+<td>Pharmacol Rev</td>
+</tr>
+<tr>
+<td>8</td>
+<td>230</td>
+<td>Paced auditory serial-addition task: a measure of recovery from concussion.</td>
+<td>Gronwall DM</td>
+<td>1977 Apr</td>
+<td>Journal Article</td>
+<td>Percept Mot Skills</td>
+</tr>
+<tr>
+<td>9</td>
+<td>216</td>
+<td>Moderate and severe traumatic brain injury in adults.</td>
+<td>Maas AI, Stocchetti N, Bullock R</td>
+<td>2008 Aug</td>
+<td>Journal Article, Review</td>
+<td>Lancet Neurol</td>
+</tr>
+<tr>
+<td>10</td>
+<td>214</td>
+<td>The role of inflammation in CNS injury and disease.</td>
+<td>Lucas SM, Rothwell NJ, Gibson RM</td>
+<td>2006 Jan</td>
+<td>Journal Article, Review</td>
+<td>Br J Pharmacol</td>
+</tr>
+<tr>
+<td>11</td>
+<td>212</td>
+<td>Effects of matrix metalloproteinase-9 gene knock-out on the proteolysis of blood-brain barrier and white matter components after cerebral ischemia.</td>
+<td>Asahi M, Wang X, Mori T, Sumii T, Jung JC, Moskowitz MA, Fini ME, Lo EH</td>
+<td>2001 Oct 1</td>
+<td>Journal Article</td>
+<td>J Neurosci</td>
+</tr>
+<tr>
+<td>12</td>
+<td>209</td>
+<td>The spectrum of disease in chronic traumatic encephalopathy.</td>
+<td>McKee AC, Stern RA, Nowinski CJ, Stein TD, Alvarez VE, Daneshvar DH, Lee HS, Wojtowicz SM, Hall G, Baugh CM, Riley DO, Kubilus CA, Cormier KA, Jacobs MA, Martin BR, Abraham CR, Ikezu T, Reichard RR, Wolozin BL, Budson AE, Goldstein LE, Kowall NW, Cantu RC</td>
+<td>2013 Jan</td>
+<td>Journal Article</td>
+<td>Brain</td>
+</tr>
+<tr>
+<td>13</td>
+<td>202</td>
+<td>How common are the &quot;common&quot; neurologic disorders?</td>
+<td>Hirtz D, Thurman DJ, Gwinn-Hardy K, Mohamed M, Chaudhuri AR, Zalutsky R</td>
+<td>2007 Jan 30</td>
+<td>Journal Article, Meta-Analysis</td>
+<td>Neurology</td>
+</tr>
+<tr>
+<td>14</td>
+<td>197</td>
+<td>A controlled cortical impact model of traumatic brain injury in the rat.</td>
+<td>Dixon CE, Clifton GL, Lighthall JW, Yaghmai AA, Hayes RL</td>
+<td>1991 Oct</td>
+<td>Journal Article</td>
+<td>J Neurosci Methods</td>
+</tr>
+<tr>
+<td>15</td>
+<td>193</td>
+<td>Inflammation in neurodegenerative diseases.</td>
+<td>Amor S, Puentes F, Baker D, van der Valk P</td>
+<td>2010 Feb</td>
+<td>Journal Article, Review</td>
+<td>Immunology</td>
+</tr>
+<tr>
+<td>16</td>
+<td>190</td>
+<td>Cumulative effects associated with recurrent concussion in collegiate football players: the NCAA Concussion Study.</td>
+<td>Guskiewicz KM, McCrea M, Marshall SW, Cantu RC, Randolph C, Barr W, Onate JA, Kelly JP</td>
+<td>2003 Nov 19</td>
+<td>Journal Article</td>
+<td>JAMA</td>
+</tr>
+<tr>
+<td>17</td>
+<td>188</td>
+<td>Apolipoprotein E controls cerebrovascular integrity via cyclophilin A.</td>
+<td>Bell RD, Winkler EA, Singh I, Sagare AP, Deane R, Wu Z, Holtzman DM, Betsholtz C, Armulik A, Sallstrom J, Berk BC, Zlokovic BV</td>
+<td>2012 May 16</td>
+<td>Journal Article</td>
+<td>Nature</td>
+</tr>
+<tr>
+<td>18</td>
+<td>188</td>
+<td>White matter integrity and cognition in chronic traumatic brain injury: a diffusion tensor imaging study.</td>
+<td>Kraus MF, Susmaras T, Caughlin BP, Walker CJ, Sweeney JA, Little DM</td>
+<td>2007 Oct</td>
+<td>Journal Article</td>
+<td>Brain</td>
+</tr>
+<tr>
+<td>...</td>
+</tr>
+<tr>
+<td>78</td>
+<td>115</td>
+<td>Chronic traumatic encephalopathy in a National Football League player.</td>
+<td>Omalu BI, DeKosky ST, Minster RL, Kamboh MI, Hamilton RL, Wecht CH</td>
+<td>2005 Jul</td>
+<td>Journal Article</td>
+<td>Neurosurgery</td>
+</tr>
+</tbody>
+</table>
+<h3 id="citation-hierarchy-of-top-12-stressed-articles">Citation Hierarchy of Top 12 Stressed Articles</h3>
+<p>Reading the 3 papers towards the bottom of the picture may be a good way of covering many of the ideas expressed in the previous papers.</p>
+<ul>
+<li>A --&gt; B means A is cited in B</li>
+</ul>
+<p><img src="/Users/acoyalowo/Projects/LitReviews/docs/img/top12hierarchy.png" alt=""></p>
+<h1 id="look-for-one-of-many-undecided-upon-logos-">Look for one of many undecided upon logos.</h1>
+<p><img src="/Users/acoyalowo/Projects/LitReviews/docs/img/LitRColor@0.5x.png" alt="">    </p>
+<p><img src="/Users/acoyalowo/Projects/LitReviews/docs/img/LitReviewsColor@0.5x.png" alt=""></p>
+<p><img src="/Users/acoyalowo/Projects/LitReviews/docs/img/LitRBlack@0.5x.png" alt="">    </p>
+<p><img src="/Users/acoyalowo/Projects/LitReviews/docs/img/LitReviewsBlack@0.5x.png" alt=""></p>
+<h1 id="pubcrawl">PubCrawl</h1>
+<p><img src="/Users/acoyalowo/Projects/LitReviews/docs/img/PubCrawl@0.5x.png" alt=""></p>
+<h1 id="pubcrawlr">PubCrawlR</h1>
+<p><img src="/Users/acoyalowo/Projects/LitReviews/docs/img/PubCrawlR@0.5x.png" alt=""></p>
+<h1 id="crosscheck">CrossCheck</h1>
+<p><img src="/Users/acoyalowo/Projects/LitReviews/docs/img/CrossCheck-02@0.5x.png" alt=""></p>
+<h1 id="works-referenced">Works Referenced</h1>
+<p><a href="#overview">Back to top</a></p>
+<ul>
+<li><p><a href="https://github.com/biopython/biopython">BioPython</a></p>
+<ul>
+<li>Cock, P.J.A. et al. Biopython: freely available Python tools for computational molecular biology and bioinformatics. Bioinformatics 2009 Jun 1; 25(11) 1422-3 <a href="http://dx.doi.org/10.1093/bioinformatics/btp163">http://dx.doi.org/10.1093/bioinformatics/btp163</a> pmid:19304878</li>
+</ul>
+</li>
+<li><p><a href="http://www.cytoscape.org/">CytoScape</a></p>
+<ul>
+<li>Shannon P, Markiel A, Ozier O, Baliga NS, Wang JT, Ramage D, Amin N, Schwikowski B, Ideker T. Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Research 2003 Nov; 13(11):2498-504</li>
+</ul>
+</li>
+<li><p><a href="https://www.ncbi.nlm.nih.gov/Structure/flink/flink.cgi">NCBI</a></p>
+<ul>
+<li>FLink: Frequency weighted links [Internet]. Bethesda (MD): National Library of Medicine (US), National Center for Biotechnology Information. 2010. Available from: <a href="https://www.ncbi.nlm.nih.gov/Structure/flink/flink.cgi">https://www.ncbi.nlm.nih.gov/Structure/flink/flink.cgi</a></li>
+</ul>
+</li>
+<li><p><a href="https://bitbucket.org/giovanniscardoni/centiscapepublic">CentiScape</a></p>
+<ul>
+<li>Scardoni G, Tosadori G, Faizan M, Spoto F, Fabbri F, Laudanna C. Biological network analysis with CentiScaPe: centralities and experimental dataset integration. F1000Research. 2014;3:139. doi:10.12688/f1000research.4477.2.</li>
+</ul>
+</li>
+</ul>
+<h1 id="artwork">Artwork</h1>
+<p>Logos designed and created by Adewole C. Oyalowo using icons provided free by <a href="http://emojione.com/">EmojiOne</a>.</p></body>
+</html>
