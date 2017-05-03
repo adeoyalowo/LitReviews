@@ -3,7 +3,7 @@
 Please see the original site at:
 https://www.ncbi.nlm.nih.gov/home/about/policies.shtml
 
-Contents copied below. Take special note of [Website Disclaimer](#website-disclaimer), [Website Usage](#website-usage), [Copyright Status of Webpages](copyright-status-of-webpages), and [Guidelines for Scripting Calls to NCBI Servers](guidelines-for-scripting-calls-to-ncbi-servers).
+Contents copied below. Take special note of [Website Disclaimer](#website-disclaimer), [Website Usage](#website-usage), [Copyright Status of Webpages](#copyright-status-of-webpages), and [Guidelines for Scripting Calls to NCBI Servers](#guidelines-for-scripting-calls-to-ncbi-servers).
 
 ## Website Disclaimer
 
