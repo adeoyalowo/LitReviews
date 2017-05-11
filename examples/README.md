@@ -1,4 +1,4 @@
-# ![LitReviews](docs/img/LitReviewsBlack@0.5x.png)
+# ![LitReviews](../docs/img/LitReviewsBlack@0.5x.png)
 
 # Overview
 
@@ -16,7 +16,7 @@ Please see [works referenced](#works-referenced) for information about the origi
 
 ## Traumatic Brain Injury Citation Map
 
-![](docs/img/citationgraph.png)
+![](../docs/img/citationgraph.png)
 
 ### Objective:
 
@@ -48,7 +48,7 @@ Please see [works referenced](#works-referenced) for information about the origi
     * "The stress of a node in a [network]...can indicate the relevance of [that node] as functionally capable of holding together communicating nodes." Definition slightly reworded by me. Please read original paper linked below.
     * Source: http://www.cbmc.it/~scardonig/centiscape/CentiScaPefiles/CentralitiesTutorial.pdf (Research team cited below)
 
-![](docs/img/top12stress.png)
+![](../docs/img/top12stress.png)
 
 ### Top 12 Stressed Articles for Traumatic Brain Injury (As of Fall 2016)
 |#|PMID|Title|Authors|Journal|Year|
@@ -100,31 +100,31 @@ Reading the 3 papers towards the bottom of the picture may be a good way of cove
 
 * A --> B means A is cited in B
 
-![](docs/img/top12hierarchy.png)
+![](../docs/img/top12hierarchy.png)
 
 # Look for one of many undecided upon logos.
 
-![](docs/img/LitRColor@0.5x.png)    
+![](../docs/img/LitRColor@0.5x.png)    
 
-![](docs/img/LitReviewsColor@0.5x.png)
+![](../docs/img/LitReviewsColor@0.5x.png)
 
-![](docs/img/LitRBlack@0.5x.png)    
+![](../docs/img/LitRBlack@0.5x.png)    
 
-![](docs/img/LitReviewsBlack@0.5x.png)
+![](../docs/img/LitReviewsBlack@0.5x.png)
 
 
 
 # PubCrawl
 
-![](docs/img/PubCrawl@0.5x.png)
+![](../docs/img/PubCrawl@0.5x.png)
 
 # PubCrawlR
 
-![](docs/img/PubCrawlR@0.5x.png)
+![](../docs/img/PubCrawlR@0.5x.png)
 
 # CrossCheck
 
-![](docs/img/CrossCheck-02@0.5x.png)
+![](../docs/img/CrossCheck-02@0.5x.png)
 
 # Works Referenced
 [Back to top](#overview)
