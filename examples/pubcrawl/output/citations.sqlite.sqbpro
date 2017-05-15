@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/christiancasey/Dropbox/School/Spring 2017/Big Data/LitReviews/examples/pubcrawl/output/citations.sqlite"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="2774"/><expanded_item id="0" parent="-1"/><expanded_item id="1" parent="-1"/><expanded_item id="2" parent="-1"/><expanded_item id="3" parent="-1"/></tab_structure><tab_browse><current_table name="tblPapers"/><default_encoding codec=""/><browsetable_info data="AAAAAwAAABIAdABiAGwAUABhAHAAZQByAHMAAAALAAAAAQAAAAAAAAABAAAACwAAAAAAAAAAAP////8AAAAYAHQAYgBsAEMAaQB0AGEAdABpAG8AbgBzAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAB4AcwBxAGwAaQB0AGUAXwBzAGUAcQB1AGUAbgBjAGUAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////"/></tab_browse><tab_sql><sql name="SQL 2">SELECT *, SUM(Internal) AS `InternalCitations`, COUNT(Internal) AS `TotalCitations` FROM tblPapers
+LEFT JOIN tblCitations ON tblPapers.Id = tblCitations.Cited
+GROUP BY Id
+ORDER BY TotalCitations DESC</sql><sql name="SQL 3">SELECT COUNT(tblPapers.FullJournalName) AS `NumArticles` 
+FROM tblPapers 
+GROUP BY tblPapers.FullJournalName
+ORDER BY NumArticles DESC
+</sql><sql name="qryCitationsAndRatio.sql">SELECT Cited, 
+	SUM(Internal) AS `InternalCitations`, 
+	COUNT(Internal) AS `TotalCitations`, 
+	CAST(SUM(Internal) AS FLOAT)/CAST(COUNT(Internal) AS FLOAT) AS `Ratio` 
+		FROM tblCitations GROUP BY Cited 
+ORDER BY Ratio DESC, InternalCitations DESC</sql><sql name="qryCountAuthors.sql">SELECT COUNT(tblAuthors.Author) AS `NumAuthors` 
+FROM tblAuthors 
+INNER JOIN tblPapers ON tblAuthors.Paper_ID = tblPapers.Paper_ID
+GROUP BY tblAuthors.Author
+ORDER BY NumAuthors DESC
+</sql><sql name="qryCountJournals.sql">SELECT COUNT(tblPapers.FullJournalName) AS `NumArticles` 
+FROM tblPapers 
+GROUP BY tblPapers.FullJournalName
+ORDER BY NumArticles DESC
+</sql><sql name="qryDataForModel.sql">SELECT *, SUM(Internal) AS `InternalCitations`, COUNT(Internal) AS `TotalCitations` FROM tblPapers
+LEFT JOIN tblCitations ON tblPapers.Id = tblCitations.Cited
+GROUP BY Id
+ORDER BY TotalCitations DESC</sql><current_tab id="5"/></tab_sql></sqlb_project>
