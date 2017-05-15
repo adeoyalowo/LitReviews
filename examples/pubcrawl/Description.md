@@ -2,7 +2,7 @@
 
 ## Problem
 
-Our project is a metastudy of research into Chronic Traumatic Encephalopathy (CTE). We are hoping to determine whether the number of times a paper is cited can be predicted with any degree of accuracy using features of the article.
+Our project is a metastudy of research into *Traumatic Brain Injury*. We are hoping to determine whether the number of times a paper is cited can be predicted with any degree of accuracy using features of the article.
 That is, are papers on this topic more likely to be cited strictly based on their content or on more extraneous features, such as publication date or the presence of a well-known author?
 
 ## Data
@@ -20,7 +20,7 @@ Finally, a third program loads data from the database, converts it to NumPy matr
 
 The PubMed API produces a dataset that contains a large number of values, some of which are duplicated in various ways. These values must be culled, reformatted, and reorganized.
 The data are also highly inconsistent:
-* Some unique ID's are all unsigned integers, while others contain dashes and other characters. This means that some IDs can be treated as numeric values, while others must be treated as text strings.
+* Some unique ID's are all unsigned integers, while others contain dashes and other characters. This means that some IDs can be treated as numeric values, while others must be treated as text strings. The queries used for this project relied on one consistent ID which could be treated as an integer value.
 * There are several date fields marking different milestones in the publication process, but they are formatted in different ways. Some are missing the day and even the month (older citations from the 19th century tend to only record the year), while others have a full timestamp including a (presumably arbitrary) time of publication.
 The algorithm must therefore cope with missing data, but eliminating all rows with missing data shrinks the dataset considerably. Instead these values were set to zero. Shrinking the dataset by filtering the input data in the initial SQL query turned out to be useful for debugging purposes though.
 * The most disappointing setback we faced was determining page numbers and, as a result, article length. The information about page numbers is ostensibly included in the search results, which would theoretically make it possible to calculate article length. However, the quality of these data is so low that it would only be possible to process it accurately in 30-40% percent of cases (by rough estimation). If there were a way to calculate article length, that value could be compared with other metrics in potentially illuminating ways. For example, are short articles likely to have fewer citations? It might eventually be possible to gather this information in other ways (for instance, by scraping the PubMed site directly and counting the number of page images shown), but for now this value is unobtainable.
@@ -66,12 +66,12 @@ Both plots from our data clearly have the same roughly-linear, concave shape as 
 The program we created uses linear model and a subset of the features provided by the PubMed search to try to predict number of citations. Data was randomly divided into training and testing sets of 80% and 20%, respectively. The model was trained using LASSO and the features: HasAbstract, NumOfAuthors, PubDate_Month, and PubDate_Year. The error was calculated using the square root of the sum of squared difference.
 The error for both testing and training data was roughly equal to the standard deviation of the labels, indicating that the model is probably not predicting much of anything.
 
-
 |   Calculation   | Value |
 |----------------|-------|
 | Standard Deviation    | 15.43 |
 | Training Error 				| 15.62 |
 | Testing Error  				| 15.14 |
+
 A quick glance at the given and predicted labels confirms that they are not similar.
 
 # Conclusion
