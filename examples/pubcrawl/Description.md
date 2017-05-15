@@ -65,6 +65,11 @@ Both plots from our data clearly have the same roughly-linear, concave shape as 
 
 The program we created uses linear model and a subset of the features provided by the PubMed search to try to predict number of citations. Data was randomly divided into training and testing sets of 80% and 20%, respectively. The model was trained using LASSO and the features: HasAbstract, NumOfAuthors, PubDate_Month, and PubDate_Year. The error was calculated using the square root of the sum of squared difference.
 The error for both testing and training data was roughly equal to the standard deviation of the labels, indicating that the model is probably not predicting much of anything.
+
+| Std. Dev.      | 15.43 |
+| Training Error | 15.62 |
+| Testing Error  | 15.14 |
+
 A quick glance at the given and predicted labels confirms that they are not similar.
 
 # Conclusion
